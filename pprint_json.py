@@ -12,8 +12,8 @@ def load_data(json_file_path):
     with open(json_file_path, 'r', encoding=encoding) as file_handler:
         return json.load(file_handler)
               
-def pretty_print_json(data):
-    print(json.dumps(data, indent=4, sort_keys=True, ensure_ascii=False))
+def pretty_print_json(json_content):
+    print(json.dumps(json_content, indent=4, sort_keys=True, ensure_ascii=False))
 
     
 if __name__ == '__main__':
