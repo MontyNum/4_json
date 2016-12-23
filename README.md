@@ -7,4 +7,4 @@ This script provides a capability to “pretty-print” arbitrary json file.
 
 **pretty_print_json(***data***)**
 
-    The function implements pretty printing, where *data* is a Python object.
+    The function implements pretty printing, where data is a Python object.
