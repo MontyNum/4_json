@@ -1,4 +1,4 @@
-# Pretty print for json file
+# Pretty print for a json file
 This script provides a capability to “pretty-print” arbitrary json file.
 
 **load_data(** *filepath***)** 
