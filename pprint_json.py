@@ -5,7 +5,7 @@ import os
 
 def load_data(json_file_path):
     if not os.path.exists(json_file_path):
-        print('There is no such path or file. Exiting...')
+        print('There is no such path or file. Exiting...')    # look at the Полезные приёмы
         sys.exit()
     encoding = detect_encoding(json_file_path)
     with open(json_file_path, 'r', encoding=encoding) as file_handler:
