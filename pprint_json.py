@@ -1,6 +1,5 @@
 import chardet
 import json
-import sys
 import os
 
 def load_data(json_file_path):
