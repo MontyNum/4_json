@@ -5,8 +5,7 @@ import os
 
 def load_data(json_file_path):
     if not os.path.exists(json_file_path):
-        print('There is no such path or file. Exiting...')    # look at the Полезные приёмы
-        sys.exit()
+        return None
     encoding = detect_encoding(json_file_path)
     with open(json_file_path, 'r', encoding=encoding) as file_handler:
         return json.load(file_handler)
@@ -23,4 +22,7 @@ def pretty_print_json(json_content):
 if __name__ == '__main__':
     file_path = input('Enter file path: ')
     json_content = load_data(file_path)
-    print(pretty_print_json(json_content))
+    if json_content:
+        print(pretty_print_json(json_content))
+    else:
+        print('\nThe file or the file path does not exist.')
