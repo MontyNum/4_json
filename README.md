@@ -13,7 +13,7 @@ This script provides a capability to “pretty-print” arbitrary json file.
 
 Entering the path of the interesting json file:
 
-    file_path = 'c:\\file_derectory\\file_name.json'
+    file_path = 'c://file_derectory//file_name.json'
 
 Loading the data:
 
